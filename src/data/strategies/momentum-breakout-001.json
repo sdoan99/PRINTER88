@@ -1,0 +1,58 @@
+{
+  "id": "momentum-breakout-001",
+  "name": "Momentum Breakout",
+  "description": "Trading breakouts on high-momentum stocks with increasing volume",
+  "type": "stocks",
+  "createdAt": "2024-03-15T10:00:00Z",
+  "updatedAt": "2024-03-15T10:00:00Z",
+  "settings": {
+    "timeframe": "daily",
+    "minimumVolume": 1000000,
+    "priceRange": "5-100",
+    "rsiThreshold": 70,
+    "volumeMultiplier": 2.5,
+    "profitTarget": 0.15,
+    "stopLoss": 0.07
+  },
+  "metrics": {
+    "totalPnL": 15750,
+    "winRate": 65.5,
+    "avgWin": 450,
+    "avgLoss": 225,
+    "profitFactor": 2.1,
+    "avgPnLPerDay": 287.5
+  },
+  "bets": [
+    {
+      "id": 1,
+      "strategyId": "momentum-breakout-001",
+      "dateTime": "2024-03-15T10:30:00Z",
+      "market": "Stocks",
+      "sector": "Technology",
+      "symbol": "NVDA",
+      "expiration": "",
+      "risk": 5000,
+      "return": 450,
+      "returnPercentage": 9,
+      "status": "Won",
+      "legs": [
+        {
+          "id": 1,
+          "dateTime": "2024-03-15T10:30:00Z",
+          "quantity": 50,
+          "position": "Buy",
+          "price": 100,
+          "risk": 5000
+        },
+        {
+          "id": 2,
+          "dateTime": "2024-03-15T14:30:00Z",
+          "quantity": 50,
+          "position": "Sell",
+          "price": 109,
+          "risk": 5450
+        }
+      ]
+    }
+  ]
+}

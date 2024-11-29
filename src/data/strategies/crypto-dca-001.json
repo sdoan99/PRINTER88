@@ -1,0 +1,61 @@
+{
+  "id": "crypto-dca-001",
+  "name": "Crypto DCA",
+  "description": "Dollar-cost averaging into major cryptocurrencies",
+  "type": "crypto",
+  "createdAt": "2024-03-13T08:00:00Z",
+  "updatedAt": "2024-03-15T15:00:00Z",
+  "settings": {
+    "timeframe": "weekly",
+    "investmentAmount": 1000,
+    "assets": ["BTC", "ETH"],
+    "rebalanceFrequency": "monthly",
+    "portfolioWeights": {
+      "BTC": 0.6,
+      "ETH": 0.4
+    },
+    "maxSlippage": 0.01,
+    "minLiquidity": 1000000
+  },
+  "metrics": {
+    "totalPnL": 8750,
+    "winRate": 55.0,
+    "avgWin": 325,
+    "avgLoss": 275,
+    "profitFactor": 1.5,
+    "avgPnLPerDay": 158.3
+  },
+  "bets": [
+    {
+      "id": 1,
+      "strategyId": "crypto-dca-001",
+      "dateTime": "2024-03-13T09:00:00Z",
+      "market": "Crypto",
+      "sector": "Cryptocurrency",
+      "symbol": "BTC",
+      "expiration": "",
+      "risk": 1000,
+      "return": 325,
+      "returnPercentage": 32.5,
+      "status": "Won",
+      "legs": [
+        {
+          "id": 1,
+          "dateTime": "2024-03-13T09:00:00Z",
+          "quantity": 0.02,
+          "position": "Buy",
+          "price": 50000,
+          "risk": 1000
+        },
+        {
+          "id": 2,
+          "dateTime": "2024-03-14T15:00:00Z",
+          "quantity": 0.02,
+          "position": "Sell",
+          "price": 51625,
+          "risk": 1325
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "options-iron-condor-001",
+  "name": "Iron Condor",
+  "description": "Selling iron condors on high IV stocks for premium collection",
+  "type": "options",
+  "createdAt": "2024-03-14T09:00:00Z",
+  "updatedAt": "2024-03-15T16:00:00Z",
+  "settings": {
+    "timeframe": "weekly",
+    "deltaRange": "0.16-0.30",
+    "daysToExpiration": "30-45",
+    "minimumIV": 35,
+    "maxRiskPerTrade": 2000,
+    "profitTarget": 0.50,
+    "stopLoss": 2.0,
+    "adjustmentThreshold": 0.16
+  },
+  "metrics": {
+    "totalPnL": 22500,
+    "winRate": 78.2,
+    "avgWin": 550,
+    "avgLoss": 175,
+    "profitFactor": 2.8,
+    "avgPnLPerDay": 358.3
+  },
+  "bets": [
+    {
+      "id": 1,
+      "strategyId": "options-iron-condor-001",
+      "dateTime": "2024-03-14T10:00:00Z",
+      "market": "Options",
+      "sector": "Technology",
+      "symbol": "AAPL",
+      "expiration": "2024-04-19",
+      "risk": 2000,
+      "return": 550,
+      "returnPercentage": 27.5,
+      "status": "Won",
+      "legs": [
+        {
+          "id": 1,
+          "dateTime": "2024-03-14T10:00:00Z",
+          "quantity": 1,
+          "position": "Sell",
+          "price": 2.50,
+          "risk": 250
+        },
+        {
+          "id": 2,
+          "dateTime": "2024-03-14T10:00:00Z",
+          "quantity": 1,
+          "position": "Buy",
+          "price": 1.50,
+          "risk": 150
+        },
+        {
+          "id": 3,
+          "dateTime": "2024-03-14T10:00:00Z",
+          "quantity": 1,
+          "position": "Sell",
+          "price": 2.25,
+          "risk": 225
+        },
+        {
+          "id": 4,
+          "dateTime": "2024-03-14T10:00:00Z",
+          "quantity": 1,
+          "position": "Buy",
+          "price": 1.25,
+          "risk": 125
+        }
+      ]
+    }
+  ]
+}

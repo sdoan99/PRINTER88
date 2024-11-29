@@ -1,0 +1,22 @@
+{
+  "strategies": [
+    {
+      "id": "momentum-breakout-001",
+      "name": "Momentum Breakout Strategy",
+      "type": "stocks",
+      "description": "Trading breakouts on high-momentum stocks with increasing volume"
+    },
+    {
+      "id": "options-iron-condor-001",
+      "name": "Iron Condor Options Strategy",
+      "type": "options",
+      "description": "Selling iron condors on high IV stocks for premium collection"
+    },
+    {
+      "id": "crypto-dca-001",
+      "name": "Crypto DCA Strategy",
+      "type": "crypto",
+      "description": "Dollar-cost averaging into major cryptocurrencies"
+    }
+  ]
+}

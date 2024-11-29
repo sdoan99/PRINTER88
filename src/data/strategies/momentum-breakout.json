@@ -1,0 +1,46 @@
+{
+  "id": "momentum-breakout-001",
+  "name": "Momentum Breakout Strategy",
+  "description": "Trading breakouts on high-momentum stocks with increasing volume",
+  "type": "stocks",
+  "createdAt": "2024-03-15T10:00:00Z",
+  "updatedAt": "2024-03-15T10:00:00Z",
+  "settings": {
+    "timeframe": "daily",
+    "minimumVolume": 1000000,
+    "priceRange": "5-100"
+  },
+  "metrics": {
+    "totalPnL": 1725,
+    "winRate": 65.5,
+    "avgWin": 450,
+    "avgLoss": 225,
+    "profitFactor": 2.1,
+    "avgPnLPerDay": 287.5
+  },
+  "bets": [
+    {
+      "id": 1,
+      "strategyId": "momentum-breakout-001",
+      "dateTime": "2024-03-15T10:30:00Z",
+      "market": "Stocks",
+      "sector": "Technology",
+      "symbol": "AAPL",
+      "expiration": "2024-06-15",
+      "risk": 15025,
+      "return": 0,
+      "returnPercentage": 0,
+      "status": "Open",
+      "legs": [
+        {
+          "id": 1,
+          "dateTime": "2024-03-15T10:30:00Z",
+          "quantity": 100,
+          "position": "Buy",
+          "price": 150.25,
+          "risk": 15025
+        }
+      ]
+    }
+  ]
+}
